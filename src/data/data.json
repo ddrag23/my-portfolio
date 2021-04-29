@@ -1,0 +1,31 @@
+{
+  "name": "Mohammad Baidhowi Alwi",
+  "job": "Web Developer",
+  "skill": ["PHP", "Laravel", "Typescript", "Javascript", "NodeJS", "Svelte"],
+  "Project": [
+    {
+      "name": "sekolahku",
+      "img": "aaaaaa",
+      "tools": {
+        "language": "PHP 7.2",
+        "framework": "CodeIgniter 3"
+      }
+    },
+    {
+      "name": "Digides",
+      "img": "aaaaaa",
+      "tools": {
+        "language": "PHP 8.0",
+        "framework": "Laravel 8"
+      }
+    },
+    {
+      "name": "SPOS",
+      "img": "aaaaaa",
+      "tools": {
+        "language": "PHP 8.0",
+        "framework": "Laravel 8"
+      }
+    }
+  ]
+}
