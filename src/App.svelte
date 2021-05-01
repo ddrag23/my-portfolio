@@ -1,16 +1,16 @@
 <script>
 	import Navbar from "./layout/Navbar.svelte";
 	import Footer from "./layout/Footer.svelte";
-	import Home from "./pages/Home.svelte";
+	/* import Home from "./pages/Home.svelte"; */
 	import Header from "./layout/Header.svelte";
-	import * as data from "./data/data.json";
-	console.log(data);
+	import routes from "./routes";
+	import Route from "svelte-spa-router";
 </script>
 
 <Header />
 <Navbar />
 <main class="py-10 z-0 mx-auto container">
-	<Home {data} />
+	<Route {routes} />
 </main>
 <Footer />
 

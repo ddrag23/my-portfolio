@@ -1,6 +1,12 @@
 <script>
+  import { link } from "svelte-spa-router";
   let checked = true;
   const elid = (elid) => document.getElementById(elid);
+  const myLink = {
+    home: "/",
+    projects: "/projects",
+    about_me: "/about-me",
+  };
   function navToggle() {
     checked = !checked;
     if (checked) {
@@ -26,16 +32,17 @@
       <ul class="text-purple-600 flex item-baselines space-x-5 text-xl">
         <li class="">
           <a
-            href="#home"
+            href={myLink.home}
+            use:link
             class="hover:font-extrabold hover:text-purple-600 hover:no-underline"
             >Home</a
           >
         </li>
         <li>
-          <a href="#project">Project</a>
+          <a href={myLink.projects} use:link>Project</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href={myLink.about_me} use:link>Contact</a>
         </li>
       </ul>
     </div>
@@ -87,31 +94,24 @@
 <div class="md:hidden hidden z-10 bg-white" id="mobile-menu">
   <div class="px-2 pt-2 pb-3 space-y-1 text-center sm:px-3">
     <a
-      href="#"
+      use:link={myLink.home}
       class="text-purple-600 hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
     >
-      Team
+      Home
     </a>
 
     <a
-      href="#"
+      use:link={myLink.projects}
       class="text-purple-600 hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
     >
       Projects
     </a>
 
     <a
-      href="#"
+      use:link={myLink.about_me}
       class="text-purple-600 hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
     >
-      Calendar
-    </a>
-
-    <a
-      href="#"
-      class="text-purple-600 hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-    >
-      Reports
+      About Me
     </a>
   </div>
 </div>
@@ -119,6 +119,13 @@
 <style type="text/css" media="screen">
   .logo a {
     font-family: "Pacifico", cursive;
+    color: #4f46e5;
+  }
+  #mobile-menu a {
+    color: #4f46e5;
+  }
+  #mobile-menu a:hover {
+    color: white;
   }
   svg {
     color: white;
