@@ -9,10 +9,9 @@
 
 <Header />
 <Navbar />
-<main>
-	<Home name={data.name} job={data.job} />
+<main class="py-10 z-0 mx-auto container">
+	<Home {data} />
 </main>
-
 <Footer />
 
 <style global lang="postcss">
@@ -24,10 +23,11 @@
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
+		background-color: #f5f3ff;
 	}
-	main {
-		height: 100vh;
-		width: 100%;
-		margin-top: 5rem;
+	@media screen and (max-width: 600px) {
+		main {
+			height: auto;
+		}
 	}
 </style>
