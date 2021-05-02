@@ -9,7 +9,7 @@
 
 <Header />
 <Navbar />
-<main class="py-10 z-0 mx-auto container">
+<main class="py-20 mx-auto container">
 	<Route {routes} />
 </main>
 <Footer />
@@ -25,6 +25,7 @@
 		padding: 0;
 		background-color: #f5f3ff;
 	}
+
 	@media screen and (max-width: 600px) {
 		main {
 			height: auto;

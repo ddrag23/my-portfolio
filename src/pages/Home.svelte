@@ -13,13 +13,13 @@
 <div>
   <section id="home">
     <div
-      class="flex sm:justify-center items-center flex-col sm:flex-row w-full"
+      class="flex sm:justify-center items-center flex-col lg:flex-row w-full"
     >
-      <div class="bg-purple-600 p-5 rounded-full clip-circle">
+      <div class="bg-purple-600 p-5 z-1 rounded-full clip-circle">
         <img src={img} alt="" />
       </div>
       <div
-        class="flex flex-col justify-center text-center sm:text-left sm:p-10 p-3
+        class="flex flex-col justify-center text-center lg:text-left sm:p-10 p-3
         box-border sm:w-3/5"
       >
         <h5 class="text-purple-800 text-m sm:text-xl font-bold sm:mt-5">
@@ -36,7 +36,7 @@
           same time and I work in a software house company now. I also like
           GNU/Linux, and like watch anime now and then.
         </p>
-        <div class="flex justify-center items-center sm:justify-start mt-5">
+        <div class="flex justify-center items-center lg:justify-start mt-5">
           <Button
             bg={"purple-600"}
             shadow={"lg"}
@@ -56,8 +56,10 @@
     <h1 class="svelte_title text-purple-600 font-bold text-4xl">
       Recent Project
     </h1>
-    <div class="box-border my-10 sm:mx-28">
-      <div class="flex flex-wrap justify-center sm:justify-between gap-5">
+    <div class="box-border my-10 mx-5 lg:mx-28">
+      <div
+        class="flex flex-wrap justify-center items-center md:justify-between sm:justify-between gap-5"
+      >
         {#each data.projects as item}
           <Card {item} />
         {/each}

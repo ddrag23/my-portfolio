@@ -18,12 +18,12 @@
   }
 </script>
 
-<nav class="bg-white shadow-md p-5">
+<nav class="bg-white shadow-md p-5 fixed z-10 w-full">
   <div class="flex justify-around items-center">
     <div class="logo">
       <a
         href="#home"
-        class="text-2xl text-purple-600 tracking-wider hover:no-underline"
+        class="text-lg sm:text-2xl tracking-wider hover:no-underline"
       >
         MY PORTFOLIO</a
       >
@@ -31,18 +31,13 @@
     <div class="hidden md:block">
       <ul class="text-purple-600 flex item-baselines space-x-5 text-xl">
         <li class="">
-          <a
-            href={myLink.home}
-            use:link
-            class="hover:font-extrabold hover:text-purple-600 hover:no-underline"
-            >Home</a
-          >
+          <a href={myLink.home} use:link class="">Home</a>
         </li>
         <li>
           <a href={myLink.projects} use:link>Project</a>
         </li>
         <li>
-          <a href={myLink.about_me} use:link>Contact</a>
+          <a href={myLink.about_me} use:link>About Me</a>
         </li>
       </ul>
     </div>
@@ -91,29 +86,31 @@
     </div>
   </div>
 </nav>
-<div class="md:hidden hidden z-10 bg-white" id="mobile-menu">
-  <div class="px-2 pt-2 pb-3 space-y-1 text-center sm:px-3">
-    <a
-      use:link={myLink.home}
-      class="text-purple-600 hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-    >
-      Home
-    </a>
+<div
+  class="md:hidden hidden bg-white flex flex-col justify-center h-full w-full items-center fixed"
+  style="z-index:9;"
+  id="mobile-menu"
+>
+  <a
+    use:link={myLink.home}
+    class="text-purple-600 hover:bg-purple-500 hover:text-white px-3 py-2 text-3xl rounded-md font-medium"
+  >
+    Home
+  </a>
 
-    <a
-      use:link={myLink.projects}
-      class="text-purple-600 hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-    >
-      Projects
-    </a>
+  <a
+    use:link={myLink.projects}
+    class="text-purple-600 hover:bg-purple-500 hover:w-full hover:text-white px-3 py-2 text-3xl rounded-md font-medium"
+  >
+    Projects
+  </a>
 
-    <a
-      use:link={myLink.about_me}
-      class="text-purple-600 hover:bg-purple-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-    >
-      About Me
-    </a>
-  </div>
+  <a
+    use:link={myLink.about_me}
+    class="text-purple-600 hover:bg-purple-500 hover:text-white px-3 py-2 text-3xl rounded-md font-medium"
+  >
+    About Me
+  </a>
 </div>
 
 <style type="text/css" media="screen">
@@ -121,11 +118,34 @@
     font-family: "Pacifico", cursive;
     color: #4f46e5;
   }
+  .logo a:visited {
+    color: #4f46e5;
+  }
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    right: 0;
+    height: 0.125rem;
+    background-color: red;
+    transform: scale(0);
+    transition: transform ease-out 0.2s;
+  }
+
+  nav ul li a:visited {
+    color: inherit;
+  }
+
   #mobile-menu a {
     color: #4f46e5;
   }
   #mobile-menu a:hover {
     color: white;
+  }
+
+  #mobile-menu a:visited {
+    color: inherit;
   }
   svg {
     color: white;
