@@ -11,7 +11,7 @@
   class="flex flex-col justify-center items-center w-full bg-purple-600 text-white p-5"
 >
   <div class="contact text-white flex justify-center items-center">
-    <a href="#" target="" class="mx-2">
+    <a href="/co" target="" class="mx-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-5 w-5"
@@ -27,13 +27,13 @@
         />
       </svg>
     </a>
-    <a href="#" target="" class="mx-2">
+    <a href="/co" target="" class="mx-2">
       <Icon data={faGithub} />
     </a>
-    <a href="#" target="" class="mx-2">
+    <a href="/co" target="" class="mx-2">
       <Icon data={faTwitter} />
     </a>
-    <a href="#" target="" class="mx-2">
+    <a href="/oc" target="" class="mx-2">
       <Icon data={faLinkedin} />
     </a>
   </div>

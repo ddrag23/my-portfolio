@@ -3,6 +3,9 @@
   import Card from "../component/Card.svelte";
 </script>
 
+<svelte:head>
+  <title>Projects</title>
+</svelte:head>
 <section id="all_project" class="text-center">
   <h1 class="svelte_title mt-5 mb-14 text-purple-600 font-bold text-5xl">
     All Project

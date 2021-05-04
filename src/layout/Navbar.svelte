@@ -1,12 +1,13 @@
 <script>
-  import { link } from "svelte-spa-router";
+  import { isActive, url } from "@roxi/routify";
   let checked = true;
   const elid = (elid) => document.getElementById(elid);
-  const myLink = {
-    home: "/",
-    projects: "/projects",
-    about_me: "/about-me",
-  };
+  const links = [
+    ["./index", "Home"],
+    ["./projects", "Projects"],
+    ["./about_me", "About Me"],
+  ];
+
   function navToggle() {
     checked = !checked;
     if (checked) {
@@ -30,15 +31,11 @@
     </div>
     <div class="hidden md:block">
       <ul class="text-purple-600 flex item-baselines space-x-5 text-xl">
-        <li class="">
-          <a href={myLink.home} use:link class="">Home</a>
-        </li>
-        <li>
-          <a href={myLink.projects} use:link>Project</a>
-        </li>
-        <li>
-          <a href={myLink.about_me} use:link>About Me</a>
-        </li>
+        {#each links as [path, name]}
+          <li>
+            <a href={$url(path)}>{name}</a>
+          </li>
+        {/each}
       </ul>
     </div>
     <div class="-mr-2 flex md:hidden">
@@ -91,26 +88,14 @@
   style="z-index:9;"
   id="mobile-menu"
 >
-  <a
-    use:link={myLink.home}
-    class="text-purple-600 hover:bg-purple-500 hover:text-white px-3 py-2 text-3xl rounded-md font-medium"
-  >
-    Home
-  </a>
-
-  <a
-    use:link={myLink.projects}
-    class="text-purple-600 hover:bg-purple-500 hover:w-full hover:text-white px-3 py-2 text-3xl rounded-md font-medium"
-  >
-    Projects
-  </a>
-
-  <a
-    use:link={myLink.about_me}
-    class="text-purple-600 hover:bg-purple-500 hover:text-white px-3 py-2 text-3xl rounded-md font-medium"
-  >
-    About Me
-  </a>
+  {#each links as [path, name]}
+    <a
+      href={$url(path)}
+      class="text-purple-600 hover:bg-purple-500 hover:text-white px-3 py-2 text-3xl rounded-md font-medium"
+    >
+      {name}
+    </a>
+  {/each}
 </div>
 
 <style type="text/css" media="screen">

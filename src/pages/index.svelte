@@ -4,12 +4,15 @@
   import { faDownload } from "@fortawesome/free-solid-svg-icons";
   import Card from "../component/Card.svelte";
   import { replace } from "svelte-spa-router";
-
+  import { goto } from "@roxi/routify";
   import * as data from "../data/data.json";
   /* import { faCircle } from "@fortawesome/free-solid-svg-icons/faCircle"; */
   let img = "assets/img/portfolio.png";
 </script>
 
+<svelte:head>
+  <title>Home</title>
+</svelte:head>
 <div>
   <section id="home">
     <div
@@ -65,7 +68,7 @@
         {/each}
       </div>
       <button
-        on:click={() => replace("/projects")}
+        on:click={$goto("./projects")}
         class="bg-purple-600 p-5 shadow-md rounded-lg text-white font-bold hover:shadow-xl"
         >More Project</button
       >

@@ -23,18 +23,18 @@
 
 			<div class="pt-2 pb-2">
 				<span
-					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2"
+					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-bold text-gray-700 mr-2 mb-2"
 				>
 					<a href={item.link_demo} target="_blank"
 						><Icon data={faEye} /> Demo</a
 					></span
 				>
 				<span
-					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2"
+					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-bold text-gray-700 mr-2 mb-2"
 					>#{item.tools.language}</span
 				>
 				<span
-					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-700 mr-2 mb-2"
+					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-bold text-gray-700 mr-2 mb-2"
 					>#{item.tools.framework}</span
 				>
 			</div>

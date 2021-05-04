@@ -1,18 +1,9 @@
 <script>
-	import Navbar from "./layout/Navbar.svelte";
-	import Footer from "./layout/Footer.svelte";
-	/* import Home from "./pages/Home.svelte"; */
-	import Header from "./layout/Header.svelte";
-	import routes from "./routes";
-	import Route from "svelte-spa-router";
+	import { Router } from "@roxi/routify";
+	import { routes } from "../.routify/routes";
 </script>
 
-<Header />
-<Navbar />
-<main class="py-20 mx-auto container">
-	<Route {routes} />
-</main>
-<Footer />
+<Router {routes} />
 
 <style global lang="postcss">
 	@tailwind base;
@@ -24,11 +15,5 @@
 		margin: 0;
 		padding: 0;
 		background-color: #f5f3ff;
-	}
-
-	@media screen and (max-width: 600px) {
-		main {
-			height: auto;
-		}
 	}
 </style>
