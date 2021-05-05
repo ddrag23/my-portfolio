@@ -2,12 +2,14 @@
   import Navbar from "../layout/Navbar.svelte";
   import Header from "../layout/Header.svelte";
   import Footer from "../layout/Footer.svelte";
+  import Loading from "../component/Loading.svelte";
 </script>
 
 <Header />
 <Navbar />
+<Loading />
 <main class="py-20 mx-auto container">
-  <slot/>
+  <slot />
 </main>
 <Footer />
 

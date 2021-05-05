@@ -5,7 +5,7 @@
   const links = [
     ["./index", "Home"],
     ["./projects", "Projects"],
-    ["./about_me", "About Me"],
+    ["./about", "About"],
   ];
 
   function navToggle() {

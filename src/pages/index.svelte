@@ -18,8 +18,12 @@
     <div
       class="flex sm:justify-center items-center flex-col lg:flex-row w-full"
     >
-      <div class="bg-purple-600 p-5 z-1 rounded-full clip-circle">
-        <img src={img} alt="" />
+      <div class="">
+        <img
+          src={img}
+          class="bg-purple-600 h-72 w-72 flex items-center justify-center z-1 rounded-full ring-4 shadow-xl"
+          alt=""
+        />
       </div>
       <div
         class="flex flex-col justify-center text-center lg:text-left sm:p-10 p-3
@@ -77,13 +81,6 @@
 </div>
 
 <style>
-  #home img {
-    width: 20em;
-    background-size: cover;
-  }
-  .clip-circle {
-    clip-path: circle(11em at center);
-  }
   .svelte_title {
     position: relative;
     display: inline-block;

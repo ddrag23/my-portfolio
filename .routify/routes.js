@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.15.1
- * File generated Tue May 04 2021 15:57:41 GMT+0700 (Western Indonesia Time)
+ * File generated Wed May 05 2021 09:28:30 GMT+0700 (Western Indonesia Time)
  */
 
 export const __version = "2.15.1"
-export const __timestamp = "2021-05-04T08:57:41.050Z"
+export const __timestamp = "2021-05-05T02:28:30.637Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -27,13 +27,13 @@ export const _tree = {
     {
       "isFile": true,
       "isDir": false,
-      "file": "about_me.svelte",
-      "filepath": "/about_me.svelte",
-      "name": "about_me",
+      "file": "about.svelte",
+      "filepath": "/about.svelte",
+      "name": "about",
       "ext": "svelte",
       "badExt": false,
-      "absolutePath": "/home/aladin/Myproject/NodeProject/my-portfolio/src/pages/about_me.svelte",
-      "importPath": "../src/pages/about_me.svelte",
+      "absolutePath": "/home/aladin/Myproject/NodeProject/my-portfolio/src/pages/about.svelte",
+      "importPath": "../src/pages/about.svelte",
       "isLayout": false,
       "isReset": false,
       "isIndex": false,
@@ -45,9 +45,9 @@ export const _tree = {
         "preload": false,
         "prerender": true
       },
-      "path": "/about_me",
-      "id": "_about_me",
-      "component": () => import('../src/pages/about_me.svelte').then(m => m.default)
+      "path": "/about",
+      "id": "_about",
+      "component": () => import('../src/pages/about.svelte').then(m => m.default)
     },
     {
       "isFile": true,
