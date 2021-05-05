@@ -38,7 +38,29 @@
     <ul class="about__list">
       <li class="list__item">
         <span class="list__title">HTML/CSS</span>
-        <p class="list__item" />
+        <p class="list__item">
+          I consider myself quite understanding html and css. indeed not an
+          expert. but I am used to using css and html for making my website.
+        </p>
+      </li>
+      <li class="list__item">
+        <span class="list__title">Javascript</span>
+        <p class="list__item">
+          Javascript is my preferred programming languange for now. I using
+          javascript in my website for manipulation user interface. I usually
+          use vanilla javascript. I already using vanilla for 4 months and I'm
+          now learning sveltejs to help make it easier for me in dom
+          manipulation on my website. I built this website using sveltejs.
+        </p>
+      </li>
+      <li class="list__item">
+        <span class="list__title">PHP</span>
+        <p class="list__item">
+          PHP is my first programming languange in the programming world. until
+          now i still use php to make the backend of my website. I usually use
+          laravel to build my website. but, I don't limit myself to frameworks.
+          because I like learning new things
+        </p>
       </li>
     </ul>
   </div>
