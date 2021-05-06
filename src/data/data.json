@@ -24,7 +24,7 @@
       "name": "Sekolahku",
       "img": "assets/img/ss/sekolah.png",
       "description": "A website for new student registration. This website is created using php72 and codeIgniter 3",
-      "link_demo": "link",
+      "link_demo": "https://www.youtube.com/embed/IzvTpPpEky8?autoplay=1",
       "tools": {
         "language": "PHP 7.2",
         "framework": "CI 3"
@@ -34,7 +34,7 @@
       "name": "Digides",
       "img": "assets/img/ss/digides.png",
       "description": "A website for managing village data and for submitting letters to the village . This website is created using php74 and Laravel 8",
-      "link_demo": "link",
+      "link_demo": "https://www.youtube.com/embed/IzvTpPpEky8?autoplay=1",
       "tools": {
         "language": "PHP 7.4",
         "framework": "Laravel 8"
@@ -44,7 +44,7 @@
       "name": "SPOS",
       "img": "assets/img/ss/pos.png",
       "description": "A website for managing store data starting from stock in, stock out to sales report. This website is created using php8 and Laravel 8",
-      "link_demo": "link",
+      "link_demo": "https://www.youtube.com/embed/IzvTpPpEky8?autoplay=1",
       "tools": {
         "language": "PHP 8.0",
         "framework": "Laravel 8"
@@ -54,7 +54,7 @@
       "name": "Menu Harianku",
       "img": "assets/img/ss/lara-menu.png",
       "description": "A website for to create a food menu and calculate the patient's nutritional needs. This website is created using php8 and laravel 8",
-      "link_demo": "link",
+      "link_demo": "https://www.youtube.com/embed/IzvTpPpEky8?autoplay=1",
       "tools": {
         "language": "PHP 8.0",
         "framework": "Laravel 8"

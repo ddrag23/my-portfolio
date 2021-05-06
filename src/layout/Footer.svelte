@@ -10,8 +10,8 @@
 <footer
   class="flex flex-col justify-center items-center w-full bg-purple-600 text-white p-5"
 >
-  <div class="contact text-white flex justify-center items-center">
-    <a href="/co" target="" class="mx-2">
+  <div class="contact flex justify-center items-center">
+    <a href="mailto:kurodyami@gmail.com" target="" class="mx-2">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="h-5 w-5"
@@ -27,13 +27,17 @@
         />
       </svg>
     </a>
-    <a href="/co" target="" class="mx-2">
+    <a href="https://github.com/ddrag23" target="" class="mx-2">
       <Icon data={faGithub} />
     </a>
-    <a href="/co" target="" class="mx-2">
+    <a href="https://twitter.com/@baiikzoo" target="" class="mx-2">
       <Icon data={faTwitter} />
     </a>
-    <a href="/oc" target="" class="mx-2">
+    <a
+      href="https://www.linkedin.com/in/mohammad-baidhowi-alwi-5a41b01b7/"
+      target=""
+      class="mx-2"
+    >
       <Icon data={faLinkedin} />
     </a>
   </div>
@@ -49,3 +53,16 @@
     >
   </p>
 </footer>
+
+<style type="text/css" media="screen">
+  footer a {
+    color: white;
+  }
+  footer a:visited {
+    color: inherit;
+  }
+
+  footer a:hover {
+    color: #b656d3;
+  }
+</style>

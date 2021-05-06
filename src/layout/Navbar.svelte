@@ -33,7 +33,7 @@
       <ul class="text-purple-600 flex item-baselines space-x-5 text-xl">
         {#each links as [path, name]}
           <li>
-            <a href={$url(path)}>{name}</a>
+            <a class:active={$isActive(path)} href={$url(path)}>{name}</a>
           </li>
         {/each}
       </ul>
@@ -106,6 +106,21 @@
   .logo a:visited {
     color: #4f46e5;
   }
+
+  nav ul li a {
+    position: relative;
+    transition: color ease-out 0.1s;
+  }
+  .active:after {
+    transform: scale(1);
+  }
+  nav ul li a:hover {
+    text-decoration: none;
+  }
+  nav ul li a:hover::after {
+    transform: scale(1);
+  }
+
   nav ul li a::after {
     content: "";
     position: absolute;
@@ -113,7 +128,7 @@
     left: 0;
     right: 0;
     height: 0.125rem;
-    background-color: red;
+    background-color: #4f46e5;
     transform: scale(0);
     transition: transform ease-out 0.2s;
   }
