@@ -42,7 +42,12 @@
     </a>
   </div>
   <p class="text-sm md:text-base text-center">
-    Powered by <strong>SvelteJs</strong> * Source code is available on Github
+    Powered by <strong>SvelteJs</strong> * Source code is available on
+    <strong>
+      <a href="https://github.com/ddrag23/my-portfolio" target="_blank"
+        >Github</a
+      >
+    </strong>
   </p>
   <p class="text-sm md:text-base">
     Inspired design by <a

@@ -29,12 +29,13 @@
 			</div>
 
 			<div class="pt-2 pb-2">
-				<span
+				<button
 					on:click={toggleModal}
 					data-link={item.link_demo}
 					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-bold text-gray-700 mr-2 mb-2"
+					style="curson: pointer;"
 				>
-					<Icon data={faEye} /> Demo</span
+					<Icon data={faEye} /> Demo</button
 				>
 				<span
 					class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-bold text-gray-700 mr-2 mb-2"
@@ -51,7 +52,14 @@
 {#if showModal}
 	<Modal>
 		<div slot="modal-body">
-			<iframe width="620" height="315" src={dataLink} />
+			<div class="ifreme-scope">
+				<iframe
+					class="iframe-responsive"
+					allowfullscreen=""
+					frameborder="0"
+					src={dataLink}
+				/>
+			</div>
 		</div>
 		<div slot="modal-footer">
 			<button
@@ -68,5 +76,28 @@
 <style type="text/css" media="screen">
 	img {
 		height: 50px;
+	}
+
+	.ifreme-scope {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 35px;
+		width: 560px;
+		overflow: hidden;
+	}
+
+	.iframe-responsive {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+	}
+	@media screen and (max-width: 660px) {
+		.ifreme-scope {
+			width: 300px;
+		}
 	}
 </style>

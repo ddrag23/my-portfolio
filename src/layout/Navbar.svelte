@@ -162,7 +162,7 @@
   }
 
   #mobile-menu a:visited {
-    color: inherit;
+    color: #4f46e5;
   }
   svg {
     color: white;

@@ -5,7 +5,7 @@
 <section id="about" class="max-w-screen-lg mx-auto py-8 pr-4 pl-0">
   <div class="section__about box-border mx-20 px-10">
     <h1 class="title__about">About Me</h1>
-    <p class="title__content">
+    <p class="about__content">
       Hi There!! I'm Alwi. My fullname Mohammad Baidhowi Alwi.I'm a 23 y/o.
       currently I learning English, js framework as sveltejs and nodejs, I'm
       experienced using php languange for build website. I also experienced
@@ -15,7 +15,7 @@
       <br />
     </p>
     <h1 class="title__about">Background</h1>
-    <p class="title__content">
+    <p class="about__content">
       I was born in Indonesia, Java island to be more precise. I start focus
       learning Programmer languange since the 3rd year of collage. actually, I
       know about Programming languange since the first years of collage. but I
@@ -23,14 +23,14 @@
       in the market and I did that before I left for college.
     </p>
     <h1 class="title__about">Spoken Languanges</h1>
-    <p class="title__content">
+    <p class="about__content">
       I can speak Indonesian and currently i learn english languange because i
       want learn more about the world software development and i want to speak
       better when i discuss with people from outside my country, build
       relationship and more.
     </p>
     <h1 class="title__about">Programming Languanges</h1>
-    <p class="title__content">
+    <p class="about__content">
       Here are some Programming and Markup languanges that I know, I'm trying
       not to limit myselft for one languange. Because not every problems can be
       solved using one languange, this my opinion.
@@ -111,6 +111,16 @@
       var(--primary-color),
       rgba(0, 0, 0, 0)
     );
+  }
+
+  .about__content,
+  .list__item {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  .list__item {
+    font-size: 18px;
   }
 
   /* .section__about p + p { */
