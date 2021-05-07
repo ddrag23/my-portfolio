@@ -10,8 +10,10 @@
   <h1 class="svelte_title mt-5 mb-14 text-purple-600 font-bold text-5xl">
     All Project
   </h1>
-  <div class="card_section mx-5 sm:mx-28">
-    <div class="flex flex-wrap justify-between sm:gap-5">
+  <div class="card_section mx-auto md:mx-10 lg:mx-28">
+    <div
+      class="flex flex-col md:flex-row md:flex-wrap justify-center items-center md:justify-between sm:gap-5"
+    >
       {#each data.projects as item}
         <Card {item} />
       {/each}
