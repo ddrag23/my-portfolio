@@ -55,6 +55,7 @@
 			<div class="ifreme-scope">
 				<iframe
 					class="iframe-responsive"
+					title="my-video"
 					allowfullscreen=""
 					frameborder="0"
 					src={dataLink}

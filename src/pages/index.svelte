@@ -99,8 +99,5 @@
       width: 10em;
       background-size: cover;
     }
-    .clip-circle {
-      clip-path: circle(6em at center);
-    }
   }
 </style>
