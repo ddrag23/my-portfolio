@@ -14,12 +14,12 @@
 <div>
   <section id="home">
     <div
-      class="flex sm:justify-center items-center flex-col lg:flex-row w-full"
+      class="flex mt-10 sm:justify-center items-center flex-col lg:flex-row w-full"
     >
       <div class="">
         <img
           src={img}
-          class="bg-purple-600 h-72 w-72 flex items-center justify-center z-1 rounded-full ring-4 shadow-xl"
+          class="bg-purple-600 h-40 w-40 sm:h-72 sm:w-72 flex items-center justify-center z-1 rounded-full ring-4 shadow-xl"
           alt=""
         />
       </div>
